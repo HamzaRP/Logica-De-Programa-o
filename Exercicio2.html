@@ -8,25 +8,25 @@
 </head>
 <body>
     
-    <h1>Exemplo de Pagina HTML com JavaScript</h1>
+<h1>Exemplo de Pagina HTML com JavaScript</h1>
 
-    <label for="nome">Digite seu Nome: </label>
+<label for="nome">Digite seu Nome: </label>
 
-    <input type="text" id="nome" placeholder="Digite seu nome">
+<input type="text" id="nome" placeholder="Digite seu nome">
 
-    <button id="mBotao">Clique no botao</button>
+<button id="mBotao">É um botao</button>
 
-    <p id="minhaMensagem"></p>
+<p id="minhaMensagem"></p>
 
-    <script>
-        document.getElementById("mBotao").addEventListener("click,"
-           function(){
-              let nome = document.getElementById("nome")
+<script>
+    document.getElementById("mBotao").addEventListener("click",
+        function(){
+           let nome = document.getElementById("nome").value;    
               
-              document.getElementById("minhaMensagem").innerHTML = "Olá, " + nome + "!";
+           document.getElementById("minhaMensagem").innerHTML = `Olá, ${nome}`;
            
-            }
-        )
+        }
+    )
     </script>
 </body>
 </html>
